@@ -8,7 +8,7 @@ The following request, will result in the below markdown file on location /Users
 ```javascript
   transformAndWriteToFile({
     frontmatterMarkdown: {
-      frontMatter: [
+      frontmatter: [
         { var1: 'this is a string'},
         { var2: ['this is an array', 'element2']},
         { obj1: {
@@ -24,9 +24,10 @@ The following request, will result in the below markdown file on location /Users
         ###### h6 Heading
         `
       },
-      path: '/Users/user/path/to/dir',
-      fileName: 'fileName.md'
-    })
+    },
+    path: '/Users/user/path/to/dir',
+    fileName: 'fileName.md'
+  })
 ```  
 
 Result:
